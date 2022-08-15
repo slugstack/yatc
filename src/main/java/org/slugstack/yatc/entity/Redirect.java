@@ -2,10 +2,7 @@ package org.slugstack.yatc.entity;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -15,11 +12,14 @@ import javax.persistence.Id;
 public class Redirect {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", updatable = false, nullable = false, unique = true)
     private Long id;
 
     @NonNull
+    @Column(unique = true, nullable = false)
     private String alias;
 
     @NonNull
+    @Column(nullable = false)
     private String url;
 }
