@@ -23,4 +23,4 @@ jobs:
           java-version: 17
           cache: maven
       - name: build
-        run: ./mvnw --show-version --no-transfer-progress --update-snapshots clean verify --file=pom.xml --fail-at-end --batch-mode
+        run: ./mvnw --show-version --no-transfer-progress --update-snapshots package --file=pom.xml --fail-at-end --batch-mode
