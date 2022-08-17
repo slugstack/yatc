@@ -1,6 +1,7 @@
 package org.slugstack.yatc.entity;
 
 import lombok.*;
+import org.hibernate.validator.constraints.URL;
 
 import javax.persistence.*;
 
@@ -20,6 +21,7 @@ public class Redirect {
     private String alias;
 
     @NonNull
+    @URL
     @Column(nullable = false)
     private String url;
 }
