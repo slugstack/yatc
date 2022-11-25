@@ -1,5 +1,6 @@
 package org.slugstack.yatc.controller;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.slugstack.yatc.entity.Redirect;
 import org.slugstack.yatc.request.RedirectCreationRequest;
@@ -9,7 +10,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.net.URI;
 import java.net.URISyntaxException;
 

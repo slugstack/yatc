@@ -1,9 +1,8 @@
 package org.slugstack.yatc.entity;
 
+import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.validator.constraints.URL;
-
-import javax.persistence.*;
 
 @Entity
 @Data

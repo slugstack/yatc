@@ -1,11 +1,10 @@
 package org.slugstack.yatc.request;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.hibernate.validator.constraints.URL;
-
-import javax.validation.constraints.NotNull;
 
 @Data
 @RequiredArgsConstructor
